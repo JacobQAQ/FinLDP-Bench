@@ -1,0 +1,70 @@
+{
+  "dataset": "FinLDP-Bench",
+  "created_on": "2026-07-31",
+  "source_reports": 419,
+  "source_level_split": {
+    "Agriculture": {
+      "train_source_ids": 89,
+      "held_out_source_ids": 10,
+      "identity_overlap": [],
+      "exact_content_hash_overlap": [],
+      "strict_temporal_order": true,
+      "near_duplicate_candidates_ge_0_90": 0,
+      "near_duplicate_candidates_ge_0_95": 0
+    },
+    "Cotton": {
+      "train_source_ids": 73,
+      "held_out_source_ids": 8,
+      "identity_overlap": [],
+      "exact_content_hash_overlap": [],
+      "strict_temporal_order": true,
+      "near_duplicate_candidates_ge_0_90": 0,
+      "near_duplicate_candidates_ge_0_95": 0
+    },
+    "Macro": {
+      "train_source_ids": 22,
+      "held_out_source_ids": 3,
+      "identity_overlap": [],
+      "exact_content_hash_overlap": [],
+      "strict_temporal_order": true,
+      "near_duplicate_candidates_ge_0_90": 0,
+      "near_duplicate_candidates_ge_0_95": 0
+    },
+    "Nonferrous_Metals": {
+      "train_source_ids": 138,
+      "held_out_source_ids": 15,
+      "identity_overlap": [],
+      "exact_content_hash_overlap": [],
+      "strict_temporal_order": true,
+      "near_duplicate_candidates_ge_0_90": 0,
+      "near_duplicate_candidates_ge_0_95": 0
+    },
+    "ETF": {
+      "train_source_ids": 55,
+      "held_out_source_ids": 6,
+      "identity_overlap": [],
+      "exact_content_hash_overlap": [],
+      "strict_temporal_order": true,
+      "near_duplicate_candidates_ge_0_90": 0,
+      "near_duplicate_candidates_ge_0_95": 0
+    }
+  },
+  "near_duplicate_method": {
+    "normalization": "Unicode NFKC, lowercase, remove whitespace/punctuation/symbols",
+    "representation": "character 5-gram set",
+    "similarity": "Jaccard",
+    "candidate_threshold": 0.9,
+    "high_similarity_threshold": 0.95
+  },
+  "near_duplicate_candidates": [],
+  "generated_dataset_checks": {
+    "errors": 0,
+    "train_samples": 45000,
+    "test_instances": 5000,
+    "all_H_have_two_distinct_training_sources": true,
+    "all_H_dates_precede_Y": true,
+    "no_Y_identity_appears_in_H": true,
+    "q_constructed_from_fixed_metadata_templates_only": true,
+    "Y_is_unmodified_and_used_for_evaluation_only": true
+  }
+}

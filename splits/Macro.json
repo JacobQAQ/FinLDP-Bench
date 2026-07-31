@@ -1,0 +1,41 @@
+{
+  "domain": "Macro",
+  "split_method": "chronological source-level split",
+  "train_source_ids": [
+    "MACRO_SRC_0001",
+    "MACRO_SRC_0002",
+    "MACRO_SRC_0003",
+    "MACRO_SRC_0004",
+    "MACRO_SRC_0005",
+    "MACRO_SRC_0006",
+    "MACRO_SRC_0007",
+    "MACRO_SRC_0008",
+    "MACRO_SRC_0009",
+    "MACRO_SRC_0010",
+    "MACRO_SRC_0011",
+    "MACRO_SRC_0012",
+    "MACRO_SRC_0013",
+    "MACRO_SRC_0014",
+    "MACRO_SRC_0015",
+    "MACRO_SRC_0016",
+    "MACRO_SRC_0017",
+    "MACRO_SRC_0018",
+    "MACRO_SRC_0019",
+    "MACRO_SRC_0020",
+    "MACRO_SRC_0021",
+    "MACRO_SRC_0022"
+  ],
+  "held_out_source_ids": [
+    "MACRO_SRC_0023",
+    "MACRO_SRC_0024",
+    "MACRO_SRC_0025"
+  ],
+  "train_date_range": [
+    "2025-07-07",
+    "2026-01-05"
+  ],
+  "held_out_date_range": [
+    "2026-01-12",
+    "2026-01-26"
+  ]
+}

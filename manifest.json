@@ -1,0 +1,44 @@
+{
+  "dataset": "FinLDP-Bench",
+  "version": "2026-07-31",
+  "description": "50,000 augmented benchmark samples constructed from 419 unique source reports.",
+  "domains": [
+    "Agriculture",
+    "Cotton",
+    "Macro",
+    "Nonferrous_Metals",
+    "ETF"
+  ],
+  "source_report_count": 419,
+  "date_normalization_overrides": {
+    "Agriculture/20280114": "2018-01-14"
+  },
+  "sample_count": 50000,
+  "training_augmented_report_samples": 45000,
+  "held_out_test_instances": 5000,
+  "source_split": {
+    "method": "chronological within each domain",
+    "training": "earlier approximately 90%",
+    "held_out": "later approximately 10%"
+  },
+  "augmentation": {
+    "unit": "one source report",
+    "paragraph_definition": "one non-empty source CSV section field",
+    "prob_drop": 0.2,
+    "drop_operation": "independent Bernoulli removal for each paragraph; retain at least one",
+    "prob_reverse": 0.2,
+    "reverse_operation": "reverse retained paragraph objects together with section labels",
+    "base_random_seed": 20260731
+  },
+  "training_record_schema": "one augmented historical report sample",
+  "test_record_schema": "(q, H, Y), with two distinct augmented training reports in H",
+  "query_policy": "q is constructed only from independently defined domain/date/task metadata templates",
+  "reference_policy": "Y is an unmodified held-out source report used only for final evaluation",
+  "paths": {
+    "source_reports": "source_reports/*.jsonl",
+    "splits": "splits/*.json",
+    "training_samples": "train/*.jsonl",
+    "test_instances": "test/*.jsonl",
+    "leakage_audit": "audits/leakage_report.json"
+  }
+}
